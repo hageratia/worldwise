@@ -1,0 +1,25 @@
+.bg {
+    position: relative;
+    overflow: hidden;
+    /* لضمان عدم خروج عناصر الطفل عن الحاوية */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 59, 63, 0.8);
+    /* استخدام لون شفاف */
+    z-index: 1;
+    /* للتأكد من أن العنصر تحت النصوص */
+    pointer-events: none;
+    /* لمنع تفاعل المستخدم مع هذه الطبقة */
+}
+
+.container-fluid>*:not(.overlay) {
+    position: relative;
+    z-index: 2;
+    /* لضمان أن يكون النص فوق الطبقة الشفافة */
+}

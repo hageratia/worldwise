@@ -1,0 +1,15 @@
+.text {
+    color: #ececec;
+}
+
+.text2 {
+    color: #aaa;
+    width: 90%;
+    margin: auto;
+}
+
+.btn {
+    background-color: #00C46A;
+    text-transform: uppercase;
+    font-weight: 500;
+}
